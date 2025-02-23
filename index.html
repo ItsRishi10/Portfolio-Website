@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Gym Website</h3>
+                <img src="https://media.istockphoto.com/id/1211886784/photo/modern-gym-interior-with-sport-and-fitness-equipment-fitness-center-interior-interior-workout.jpg?s=612x612&w=0&k=20&c=MCmLSxq-tDeh6XEDWPRewkLJr-FZR734sdNQ3wbExTc=" alt="Gym Image">
+                <p>Website made to advertise about gym.</p>
+                <a href="https://itsrishi10.github.io/Gym-Website/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Kidz World</h3>
+                <img src="https://t3.ftcdn.net/jpg/02/41/43/18/360_F_241431868_8DFQpCcmpEPVG0UvopdztOAd4a6Rqsoo.jpg" alt="Shop Image">
+                <p>Website made for ecommerce business</p>
+                <a href="https://itsrishi10.github.io/Kidz-World/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Groove Grocery Shop</h3>
+                <img src="https://media.istockphoto.com/id/1314210006/photo/grocery-store-shop-in-vintage-style-with-fruit-and-vegetables-crates-on-the-street.jpg?s=612x612&w=0&k=20&c=UFL3bRQkWH7dt6EMLswvM4u8-1sPQU9T5IFHXuBbClU=" alt="Shop Image">
+                <p>Another type of website for ecommerce business</p>
+                <a href="https://itsrishi10.github.io/Groove-Grocery-Shop/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Numeron 2</h3>
+                <img src="https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg" alt="Game Image">
+                <p>Game websites</p>
+                <a href="https://itsrishi10.github.io/Numeron2/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Earth Website</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_U4EA57oeG4mST7GxEbvVvx-NHHT5otxlg&s" alt="Earth Image">
+                <p>Website with real time counter of what happens around the Earth</p>
+                <a href="https://itsrishi10.github.io/Earth/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Save Wildlife</h3>
+                <img src="https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg" alt="Wildlife Image">
+                <p>Educational websites</p>
+                <a href="https://itsrishi10.github.io/Save-Wildlife" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/xeoewqgd" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit-button">Send</button>
+        </form>
+        <p>Email: mrish234@gmail.com</p>
+        <p>Instagram: i_amrishi_10</p>
+        <p>For more projects visit my GitHub page: <a href="https://github.com/ItsRishi10" target="_blank"> ItsRishi10 </a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Rishab. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const year = new Date().getFullYear();
+            document.getElementById("year").textContent = year;
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
